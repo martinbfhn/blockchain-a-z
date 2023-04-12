@@ -104,9 +104,9 @@ def get_chain():
 def is_valid():
     is_valid = blockchain.is_chain_valid(blockchain.chain)
     if is_valid:
-        response = {'message' : 'Todo correcto. La cadena de bloques es válida.'}
+        response = {'message' : 'La cadena es válida.'}
     else:
-        response = {'message' : 'Houston, tenemos un problema. La cadena de bloques no es válida.'}
+        response = {'message' : 'La cadena no es válida.'}
     return jsonify(response), 200  
 
 # Ejecutar la app
